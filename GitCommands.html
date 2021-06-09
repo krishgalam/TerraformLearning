@@ -1,0 +1,36 @@
+<html>
+    <bod>
+        <div>
+            <li>git init</li>
+            <li>git add .</li>
+            <li>git commit -m "comment"</li>
+            <li>git push -u origin "branchname"</li>
+        </div>
+
+Go into the directory containing the project. using cd <command>
+To change drive cd "D:/"
+To go back cd ../
+To Create directory mkdir "foldername"
+Type git init --> To initialize git
+Type git add . --> to add all of the relevant files.
+You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. 
+Use git add .gitignore, too. please not git add does not add any new files to the physical location 
+we have to add manually then execute git add command to add to the git repository
+Type git commit -m "comment"
+Connect it to github
+You’ve now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
+
+Go to github.
+Log in to your account.
+Click the “Create repository” button.
+Now, follow the second set of instructions, “Push an existing repository…”
+
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+Actually, the first line of the instructions will say
+
+$ git remote add origin https://github.com/username/new_repo
+But I use git@github.com:username/new_repo rather than https://github.com/username/new_repo, as the former is for use with ssh (if you set up ssh as I mentioned in “Your first time”, then you won’t have to type your password every time you push things to github). If you use the latter construction, you’ll have to type your github password every time you push to github.
+</bod>
+</html>
+
