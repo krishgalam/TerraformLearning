@@ -5,7 +5,6 @@ terraform plan -var-file="dev.tfvars"
 terraform apply
 terraform apply -auto-approve
 terraform apply -var-file="dev.tfvars" -auto-approve
-terraform destroy
 
 
 Main commands:
