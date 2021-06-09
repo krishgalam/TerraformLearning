@@ -1,9 +1,12 @@
 terraform init
 terraform validate
 terraform plan
+terraform plan -var-file="dev.tfvars"
 terraform apply
 terraform apply -auto-approve
+terraform apply -var-file="dev.tfvars" -auto-approve
 terraform destroy
+
 
 Main commands:
   init          Prepare your working directory for other commands
