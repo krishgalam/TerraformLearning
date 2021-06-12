@@ -1,3 +1,3 @@
 module "Module" {
-    source = "./Module"
+    source = "./Module/ResourceGroup"
 }
