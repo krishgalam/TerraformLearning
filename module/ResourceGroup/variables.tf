@@ -17,21 +17,21 @@ variable "location" {
   type        = string
 }
 
-# variable "sku-tier" {
-#   type = string
-   
-# }
-# variable "sku-size" {
-#   type = string
-   
-# }
-
-variable "sku" {
-    type = object({
-        tier = string
-        size = string
-    })
+variable "sku-tier" {
+  type = string
+ 
 }
+variable "sku-size" {
+  type = string
+ 
+}
+
+# variable "sku" {
+#     type = object({
+#         tier = string
+#         size = string
+#     })
+# }
 
 # variable "user_information" {
 #   type = object({

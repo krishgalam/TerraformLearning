@@ -9,8 +9,8 @@ resource "azurerm_app_service_plan" "Test" {
   resource_group_name = azurerm_resource_group.Test.name
 
   sku {
-    tier = var.sku.tier
-    size = var.sku.size
+    tier = var.sku-tier
+    size = var.sku-size
   }
 }
 
